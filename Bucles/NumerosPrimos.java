@@ -35,6 +35,7 @@ public class NumerosPrimos {
 				System.out.println("Número Primo");
 			}
 		}
+		
+	
 	}
-
 }
