@@ -6,6 +6,7 @@ public abstract class Avion {
 
 	private double tonelaje;
 	private int potencia;
+	private String modelo;
 
 	// SETTERS AND GETTERS
 
@@ -24,6 +25,14 @@ public abstract class Avion {
 	public final void setPotencia(int potencia) {
 		this.potencia = potencia;
 	}
+	
+	public String getModelo() {
+		return modelo;
+	}
+
+	public final void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
 
 	// METODOS
 
@@ -34,8 +43,9 @@ public abstract class Avion {
 	public String aterrizar() {
 		return "Estoy aterrizando";
 	}
-	
-	// METODO ABSTRACTO O PLANTILLA, lo tienen que definir las clases hijas Y ES OBLIGATORIO
-	
+
+	// METODO ABSTRACTO O PLANTILLA, lo tienen que definir las clases hijas Y ES
+	// OBLIGATORIO
+
 	public abstract String repostar();
 }

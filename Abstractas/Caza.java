@@ -5,7 +5,6 @@ public class Caza extends Avion {
 	// PROPIEDADES
 
 	private int num_misiles;
-	private String modelo;
 
 	// SETTERS AND GETTERS
 
@@ -15,14 +14,6 @@ public class Caza extends Avion {
 
 	public final void setNum_misiles(int num_misiles) {
 		this.num_misiles = num_misiles;
-	}
-
-	public String getModelo() {
-		return modelo;
-	}
-
-	public final void setModelo(String modelo) {
-		this.modelo = modelo;
 	}
 
 	// METODOS
@@ -37,9 +28,23 @@ public class Caza extends Avion {
 		return "Es un caza modelo: " + getModelo() + " con una potencia de fuego de: " + getNum_misiles() + " misiles";
 	}
 
-	@Override		//DEL METODO ABSTRACTO
+	@Override // DEL METODO ABSTRACTO
 	public String repostar() {
 		// TODO Auto-generated method stub
 		return "Reposto en tierra y en vuelo";
 	}
+
+	@Override // SIRVE PARA COMPARAR OBJETOS CON OTROS OBJETOS
+	public boolean equals(Object obj) {
+		// Convertimos obj a Caza
+		Caza caza2 = (Caza) obj;
+
+		if (this.getPotencia() == caza2.getPotencia()) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
 }
