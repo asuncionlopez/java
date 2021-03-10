@@ -22,7 +22,7 @@ public class Arrays {
 
 		System.out.println("Recorro el bucle");
 		
-		for (int contador = 0; contador <= 4; contador++) {
+		for (int contador = 0; contador <= 4; contador++) { //para recorrer las posiciones del array
 			System.out.print(array3[contador] + " - ");
 		}
 		System.out.println("\nRecorro el bucle del revés");

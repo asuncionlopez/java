@@ -16,7 +16,7 @@ public class Arrays1 {
 		// Pedir 3 nombres, los ponemos en el array frases y luego los visualizamos
 
 		Scanner entrada = new Scanner(System.in);
-		String frase;
+		
 		for (int posicion = 0; posicion <= 2; posicion++) {
 			frases[posicion] = entrada.nextLine();
 		}
